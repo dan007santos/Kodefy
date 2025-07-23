@@ -8,8 +8,8 @@
   <script src="https://cdn.jsdelivr.net/npm/monaco-editor @0.33.0/min/vs/loader.js"></script>
 </head>
 <body>
-  <h1>🚀 Kodefy</h1>
-  <p>Seu editor de código online</p>
+  <h1>🚀 <span style="color:#4ade80">Kodefy</span></h1>
+  <p><strong>Seu editor de código online</strong> — simples, rápido e feito por você.</p>
 
   <div>
     <label>Linguagem: 
@@ -19,6 +19,7 @@
       </select>
     </label>
     <button onclick="runCode()">▶️ Rodar</button>
+    <button onclick="clearEditor()">🗑️ Limpar</button>
   </div>
 
   <div id="editor"></div>
