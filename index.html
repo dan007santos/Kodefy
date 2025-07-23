@@ -1,32 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kodefy</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/monaco-editor @0.33.0/min/vs/loader.js"></script>
-</head>
-<body>
-  <h1>🚀 <span style="color:#4ade80">Kodefy</span></h1>
-  <p><strong>Seu editor de código online</strong> — simples, rápido e feito por você.</p>
-
-  <div>
-    <label>Linguagem: 
-      <select id="language">
-        <option value="python">Python</option>
-        <option value="javascript">JavaScript</option>
-      </select>
-    </label>
-    <button onclick="runCode()">▶️ Rodar</button>
-    <button onclick="clearEditor()">🗑️ Limpar</button>
-  </div>
-
-  <div id="editor"></div>
-
-  <h2>Saída:</h2>
-  <pre id="output">Aqui aparecerá o resultado...</pre>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<div>
+  <label>Linguagem: 
+    <select id="language">
+      <option value="python">Python</option>
+      <option value="javascript">JavaScript</option>
+      <option value="html">HTML/CSS</option>
+      <option value="java">Java</option>
+      <option value="cpp">C++</option>
+      <option value="php">PHP</option>
+      <option value="go">Go</option>
+      <option value="rust">Rust</option>
+    </select>
+  </label>
+  <button onclick="runCode()">▶️ Rodar</button>
+  <button onclick="clearEditor()">🗑️ Limpar</button>
+  <button onclick="askAI()" style="background:#8b5cf6">🔮 Gerar com IA</button>
+</div>
