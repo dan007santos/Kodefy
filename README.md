@@ -1,283 +1,245 @@
-# 🚀 Kodefy
+# 🚀 Kodefy — Editor de Código com IA Integrada
 
-**Seu editor de código com IA** — diga o que quer, a KAI faz.
+Kodefy é uma plataforma de desenvolvimento online simples, poderosa e com **IA integrada (KAI)**.  
+Diga o que quer, e a IA gera o código em segundos.
 
-## � Como Usar
+## ✨ Recursos
 
-### 🛠️ Instalação
+- 🤖 **KAI (IA integrada)** — Google Gemini AI + templates locais
+- 💻 **Monaco Editor** — motor do VS Code integrado
+- 🎨 **8 linguagens** — JavaScript, Python, HTML, CSS, Java, C++, C#, Go
+- ⚡ **Execução real** — JavaScript e HTML executam instantaneamente
+- 📱 **Responsivo** — funciona perfeitamente no mobile
+- 🌐 **Zero config** — abra `index.html` e funciona
 
-1. **Clone o repositório:**
-```bash
-git clone https://github.com/dan007santos/kodefy.space
-cd kodefy.space
-```
-
-2. **Configure a API do Gemini (Opcional):**
-```bash
-# Copie o arquivo de exemplo
-cp .env.example .env
-
-# Edite o arquivo .env e adicione sua chave do Gemini
-# Obtenha em: https://makersuite.google.com/app/apikey
-GEMINI_API_KEY=sua_chave_api_aqui
-```
-
-3. **Para uso com Next.js (IA real):**
-```bash
-npm install
-npm run dev
-```
-
-4. **Para uso standalone (apenas frontend):**
-   - Abra `index.html` diretamente no navegador
-   - KAI funcionará com templates locais
-
-### 💡 Uso Básico
-
-1. **Escrever Código**
-   - Selecione uma linguagem no dropdown
-   - Digite seu código no editor Monaco
-   - Use syntax highlighting automático
-
-2. **Executar Código**
-   - **JavaScript**: Execução instantânea com saída no console
-   - **HTML**: Renderização em iframe integrado
-   - **Outras linguagens**: Validação e preview
-
-3. **Gerar com IA (KAI)**
-   - Clique no botão "🔮 Gerar com IA"
-   - Descreva o que quer em linguagem natural
-   - KAI gera código automaticamente
-
-#### Exemplos de comandos para KAI:
-```
-"calculadora em JavaScript"
-"jogo da cobrinha em Python"  
-"página de login em HTML"
-"algoritmo de ordenação em C++"
-"hello world em todas as linguagens"
-```
-
-## 🤖 Sistema KAI (IA)
-
-### IA Real (Google Gemini)
-Quando configurado com `GEMINI_API_KEY`, KAI usa o modelo Gemini 1.5 Flash para:
-- ✨ Geração inteligente de código
-- 🎯 Compreensão de contexto natural
-- 🔄 Adaptação automática por linguagem
-- 💡 Código funcional e otimizado
-
-### Fallback Local
-Sem API configurada, KAI usa templates locais para:
-- �📋 Calculadoras funcionais
-- 🎮 Jogos interativos
-- 🌐 Sites responsivos
-- 📊 Algoritmos de ordenação
-- 🔐 Formulários de login
-
-### Configuração da API Gemini
-
-1. **Obtenha sua chave:**
-   - Acesse [Google AI Studio](https://makersuite.google.com/app/apikey)
-   - Faça login com sua conta Google
-   - Gere uma nova API key
-
-2. **Configure no projeto:**
-```bash
-# No arquivo .env
-GEMINI_API_KEY=AIzaSyBxxxxx...xxxxx
-```
-
-3. **Teste a integração:**
-   - Execute `npm run dev`
-   - Use KAI para gerar código
-   - Verifique logs para confirmar conexãoojeto
-
-Kodefy é um editor de código web moderno e intuitivo que permite escrever, executar e gerar código automaticamente usando inteligência artificial. Perfeito para aprendizado, prototipagem rápida e desenvolvimento ágil.
-
-## ✨ Funcionalidades
-
-- 🖥️ **Editor Monaco**: Editor profissional baseado no VS Code
-- 🤖 **IA Integrada (KAI)**: Gere código automaticamente com comandos em linguagem natural
-- 🔄 **Execução Instantânea**: Execute JavaScript e HTML diretamente no navegador
-- 🌈 **Multi-linguagens**: Suporte para 8 linguagens populares
-- 🎨 **Interface Moderna**: Design limpo e responsivo com tema escuro
-- ⚡ **Performance**: Carregamento rápido e interface fluida
-
-## 🛠️ Linguagens Suportadas
-
-- **Python** - Exemplos e algoritmos
-- **JavaScript** - Execução em tempo real
-- **HTML/CSS** - Renderização instantânea
-- **Java** - Sintaxe e estruturas
-- **C++** - Algoritmos e performance
-- **PHP** - Scripts server-side
-- **Go** - Programação concorrente
-- **Rust** - Segurança e performance
+---
 
 ## 🚀 Como Usar
 
-### 1. **Escrever Código**
-- Selecione uma linguagem no dropdown
-- Digite seu código no editor Monaco
-- Use syntax highlighting automático
+### Opção 1: Modo Simples (só frontend)
 
-### 2. **Executar Código**
-- **JavaScript**: Execução instantânea com saída no console
-- **HTML**: Renderização em iframe integrado
-- **Outras linguagens**: Validação e preview
-
-### 3. **Gerar com IA (KAI)**
-- Clique no botão "🔮 Gerar com IA"
-- Descreva o que quer em linguagem natural
-- KAI gera código automaticamente
-
-#### Exemplos de comandos para KAI:
-```
-"calculadora em JavaScript"
-"jogo da cobrinha em Python"  
-"página de login em HTML"
-"algoritmo de ordenação em C++"
-"hello world em todas as linguagens"
+```bash
+# Clone e abra
+git clone https://github.com/dan007santos/kodefy.space
+cd kodefy.space
+open index.html
 ```
 
-## 🎯 Exemplos Práticos
+- ✅ KAI funciona com templates locais inteligentes
+- ✅ Execução de JavaScript e HTML em tempo real
+- ✅ Sem configuração, sem dependências
 
-### Calculadora JavaScript
-```javascript
-class Calculadora {
-    static somar(a, b) { return a + b; }
-    static subtrair(a, b) { return a - b; }
-    // ... mais métodos
-}
-```
+### Opção 2: Modo Completo (com IA real)
 
-### Jogo da Cobrinha
-- Interface gráfica com Canvas
-- Controles por teclado
-- Sistema de pontuação
-- Detecção de colisões
+Para usar IA real do Google Gemini:
 
-### Algoritmos de Ordenação
-- Bubble Sort, Quick Sort, Merge Sort
-- Comparação de performance
-- Visualização de complexidade
-
-## 🛠️ Instalação e Uso
-
-### Uso Local
-1. Clone o repositório:
+1. **Clone o projeto:**
 ```bash
 git clone https://github.com/dan007santos/kodefy.space
 cd kodefy.space
 ```
 
-2. Abra o `index.html` em um navegador moderno
+2. **Instale dependências:**
+```bash
+npm install
+```
 
-3. Comece a codar! 🎉
+3. **Configure a IA (opcional):**
+```bash
+cp .env.example .env
+# Edite .env e adicione: GEMINI_API_KEY=sua_chave
+```
 
-### Recursos Necessários
-- Navegador moderno (Chrome, Firefox, Safari, Edge)
-- Conexão com internet (para carregar Monaco Editor CDN)
+4. **Execute:**
+```bash
+npm run dev
+# Acesse: http://localhost:3000
+```
 
-## 🎨 Estrutura do Projeto
+---
+
+## 🤖 KAI — IA Integrada
+
+### 💡 Como Usar a IA
+
+1. Clique em **"🔮 Gerar com IA"**
+2. Digite o que quer em português:
+   - *"calculadora em JavaScript"*
+   - *"jogo da cobrinha em Python"*
+   - *"página de login responsiva"*
+   - *"algoritmo de ordenação"*
+3. KAI gera o código automaticamente!
+
+### 🔧 Duas Versões da IA
+
+**🌐 IA Real (Google Gemini):**
+- Requer `GEMINI_API_KEY` configurada
+- Respostas mais inteligentes e variadas
+- Compreende contexto complexo
+
+**📦 IA Local (Templates):**
+- Funciona sem internet
+- Templates pré-programados funcionais
+- Calculadoras, jogos, sites completos
+
+---
+
+## 🎯 Exemplos Práticos
+
+### Calculadora Completa
+```
+Prompt: "calculadora em JavaScript"
+Resultado: Interface HTML + CSS + lógica JavaScript
+```
+
+### Jogo da Cobrinha
+```
+Prompt: "jogo da cobrinha em Python"
+Resultado: Jogo funcional com tabuleiro e pontuação
+```
+
+### Site Responsivo
+```
+Prompt: "página de login moderna"
+Resultado: HTML/CSS responsivo com validação
+```
+
+---
+
+## 🏗️ Estrutura do Projeto
 
 ```
 kodefy.space/
 ├── index.html          # Interface principal
-├── script.js           # Lógica e funcionalidades
-├── style.css           # Estilos e tema
-├── api/                # Endpoints de API (futuro)
-└── README.md           # Documentação
+├── script.js           # Lógica do editor + IA
+├── style.css           # Estilos modernos
+├── pages/api/ai.js     # Endpoint da IA (Next.js)
+├── package.json        # Dependências
+└── .env.example        # Configuração da API
 ```
-
-## 🔧 Configuração Avançada
-
-### Personalizando KAI
-Para conectar uma API de IA real, edite a função `askAI()` em `script.js`:
-
-```javascript
-async function askAI() {
-    const response = await fetch('/api/ai', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-            prompt: userPrompt, 
-            language: language 
-        })
-    });
-    // ... processar resposta
-}
-```
-
-### Adicionando Linguagens
-1. Adicione opção no HTML select
-2. Configure mapeamento em `getMonacoLanguage()`
-3. Adicione exemplo em `examples` object
-
-## 📱 Responsividade
-
-Kodefy é totalmente responsivo:
-- **Desktop**: Interface completa
-- **Tablet**: Layout adaptado
-- **Mobile**: Controles otimizados
-
-## 🤝 Contribuindo
-
-1. Faça fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-### Áreas para Contribuição
-- 🔧 Novos executores de linguagem
-- 🤖 Melhorias na IA
-- 🎨 Temas e personalização
-- 📚 Mais exemplos e templates
-- 🐛 Correção de bugs
-- 📖 Documentação
-
-## 🐛 Problemas Conhecidos
-
-- Execução limitada a JavaScript e HTML
-- IA usa exemplos pré-definidos (não conectada a API real)
-- Sem persistência de código (implementação futura)
-
-## 🔮 Roadmap
-
-### Versão 1.1
-- [ ] Integração com APIs de IA (GPT, Gemini)
-- [ ] Execução server-side para Python, Java, etc.
-- [ ] Sistema de salvamento de projetos
-- [ ] Temas personalizáveis
-
-### Versão 1.2
-- [ ] Colaboração em tempo real
-- [ ] Debugging integrado
-- [ ] Terminal integrado
-- [ ] Extensões de comunidade
-
-### Versão 2.0
-- [ ] Desktop app (Electron)
-- [ ] Marketplace de templates
-- [ ] Integração com Git
-- [ ] Deployment automático
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
-## 👨‍💻 Autor
-
-**Dan Santos** - [@dan007santos](https://github.com/dan007santos)
-
-## 🌟 Agradecimentos
-
-- **Monaco Editor** - Editor de código profissional
-- **VS Code** - Inspiração para interface
-- **Comunidade Open Source** - Suporte e feedback
 
 ---
 
-⭐ **Gostou do projeto? Deixe uma estrela!** ⭐
+## 🛠️ Tecnologias
+
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+- **Editor:** Monaco Editor (VS Code)
+- **IA:** Google Gemini 1.5 Flash
+- **Backend:** Next.js (para API)
+- **Deploy:** Vercel ready
+
+---
+
+## ⚙️ Configuração da API Gemini
+
+### 1. Obter Chave da API
+
+1. Acesse [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Faça login com sua conta Google
+3. Clique em "Create API Key"
+4. Copie a chave gerada
+
+### 2. Configurar no Projeto
+
+```bash
+# Copie o arquivo de exemplo
+cp .env.example .env
+
+# Edite .env e adicione sua chave
+GEMINI_API_KEY=AIzaSyBxxxxx...xxxxx
+```
+
+### 3. Testar Integração
+
+```bash
+npm run dev
+# Acesse http://localhost:3000
+# Use KAI para gerar código
+```
+
+---
+
+## 🎮 Linguagens Suportadas
+
+| Linguagem  | Syntax Highlight | Execução | Templates KAI |
+|------------|------------------|----------|---------------|
+| JavaScript | ✅               | ✅       | ✅            |
+| HTML       | ✅               | ✅       | ✅            |
+| CSS        | ✅               | ✅       | ✅            |
+| Python     | ✅               | ❌       | ✅            |
+| Java       | ✅               | ❌       | ✅            |
+| C++        | ✅               | ❌       | ✅            |
+| C#         | ✅               | ❌       | ✅            |
+| Go         | ✅               | ❌       | ✅            |
+
+---
+
+## 📝 Templates Locais da KAI
+
+A IA local inclui templates para:
+
+- **Calculadoras:** Básica, científica, IMC
+- **Jogos:** Snake, Tic-tac-toe, pedra/papel/tesoura
+- **Sites:** Landing pages, login forms, portfolios
+- **Algoritmos:** Ordenação, busca, estruturas de dados
+- **Utilitários:** Geradores, conversores, validadores
+
+---
+
+## 🚀 Deploy
+
+### Vercel (Recomendado)
+
+```bash
+# Instale Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+
+# Configure environment variables no painel
+```
+
+### GitHub Pages (Frontend only)
+
+```bash
+# Envie para GitHub
+git push origin main
+
+# Ative GitHub Pages nas configurações do repo
+# Use branch: main, folder: / (root)
+```
+
+---
+
+## 🤝 Contribuindo
+
+1. Fork o projeto
+2. Crie uma branch: `git checkout -b feature/nova-feature`
+3. Commit: `git commit -m 'Adiciona nova feature'`
+4. Push: `git push origin feature/nova-feature`
+5. Abra um Pull Request
+
+---
+
+## 📄 Licença
+
+MIT License - veja [LICENSE](LICENSE) para detalhes.
+
+---
+
+## 🔗 Links
+
+- **Demo:** [kodefy.space](https://kodefy.space)
+- **Repositório:** [GitHub](https://github.com/dan007santos/kodefy.space)
+- **Issues:** [Bug Reports](https://github.com/dan007santos/kodefy.space/issues)
+
+---
+
+<div align="center">
+
+**Feito com ❤️ por [Dan Santos](https://github.com/dan007santos)**
+
+*Diga o que quer, a KAI faz.*
+
+</div>
