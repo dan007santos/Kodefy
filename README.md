@@ -1,3 +1,6 @@
+# Kodefy
+Seu editor de código com IA integrada!
+
 # 🚀 Kodefy — Editor de Código com IA Integrada
 
 Kodefy é uma plataforma de desenvolvimento online simples, poderosa e com **IA integrada (KAI)**.  

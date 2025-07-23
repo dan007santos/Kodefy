@@ -1,23 +1,12 @@
 {
   "name": "kodefy",
   "version": "1.0.0",
-  "description": "Editor de código com IA integrada",
-  "main": "index.html",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "echo 'Build OK'",
+    "dev": "echo 'Modo desenvolvimento'"
   },
   "dependencies": {
-    "next": "^14.0.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "@google/generative-ai": "^0.2.1"
-  },
-  "devDependencies": {
-    "eslint": "^8.0.0",
-    "eslint-config-next": "^14.0.0"
+    "@google/generative-ai": "^0.15.0"
   },
   "keywords": [
     "editor",

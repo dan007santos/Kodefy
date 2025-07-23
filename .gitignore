@@ -1,29 +1,5 @@
-# Arquivos de ambiente
+# Secrets
 .env
 .env.local
-.env.production
-
-# Dependências
 node_modules/
-
-# Builds do Next.js
-.next/
-out/
-
-# Logs
-*.log
-
-# Cache
-.cache/
-
-# Arquivos do sistema
-.DS_Store
-Thumbs.db
-
-# IDEs
-.vscode/
-.idea/
-
-# Temporary files
-*.tmp
-*.temp
+.vercel

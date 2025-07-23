@@ -8,11 +8,11 @@
   <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.33.0/min/vs/loader.js"></script>
 </head>
 <body>
-  <h1>🚀 <span>Kodefy</span></h1>
-  <p><strong>Seu editor de código com IA</strong> — diga o que quer, a KAI faz.</p>
+  <h1>🚀 <span data-translate="title">Kodefy</span></h1>
+  <p><strong data-translate="subtitle">Seu editor de código com IA</strong> — diga o que quer, a KAI faz.</p>
 
-  <div>
-    <label>Linguagem: 
+  <div class="controls">
+    <label data-translate="ask_language">Linguagem: 
       <select id="language">
         <option value="python">Python</option>
         <option value="javascript">JavaScript</option>
@@ -24,15 +24,39 @@
         <option value="rust">Rust</option>
       </select>
     </label>
-    <button onclick="runCode()">▶️ Rodar</button>
-    <button onclick="clearEditor()">🗑️ Limpar</button>
-    <button onclick="askAI()" style="background:#8b5cf6">🔮 Gerar com IA</button>
+    <label data-translate="ask_level">Nível:
+      <select id="userLevel">
+        <option value="iniciante" data-translate="level_beginner">Iniciante</option>
+        <option value="intermediário" selected data-translate="level_intermediate">Intermediário</option>
+        <option value="avançado" data-translate="level_advanced">Avançado</option>
+      </select>
+    </label>
+    <label>🌍 Idioma:
+      <select id="language-select" onchange="changeLang()">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="zh">中文</option>
+        <option value="hi">हिन्दी</option>
+        <option value="ar">العربية</option>
+        <option value="ru">Русский</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="fr">Français</option>
+      </select>
+    </label>
+    <button onclick="runCode()" data-translate="btn_run">▶️ Rodar</button>
+    <button onclick="clearEditor()" data-translate="btn_clear">🗑️ Limpar</button>
+    <button onclick="askAI()" style="background:#8b5cf6" data-translate="btn_ai">🔮 Gerar com IA</button>
+    <button onclick="startVoiceInput()" style="background:#ec4899; color:white" data-translate="btn_voice">
+      🎙️ Falar com a KAI
+    </button>
   </div>
 
   <div id="editor"></div>
 
-  <h2>Saída:</h2>
-  <pre id="output">Aqui aparecerá o resultado...</pre>
+  <h2 data-translate="output_label">Saída:</h2>
+  <pre id="output" data-translate="output_placeholder">Aqui aparecerá o resultado...</pre>
 
   <script src="script.js"></script>
 </body>
