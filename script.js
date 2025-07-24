@@ -166,7 +166,7 @@ function startVoiceInput() {
   };
 
   recognition.start();
-  speakText(KAI.listening || 'Fale agora! A KAI está ouvindo...');
+  speakText("Fale agora! A KAI está ouvindo...");
 }
 
 // Envia texto para a KAI
