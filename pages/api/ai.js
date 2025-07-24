@@ -1,4 +1,5 @@
 // pages/api/ai.js
+// pages/api/ai.js
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export default async function handler(req, res) {
@@ -37,9 +38,17 @@ export default async function handler(req, res) {
     res.status(200).json({ code });
   } catch (error) {
     console.error("🚨 Erro na Gemini API:", error);
+    
     if (error.message.includes("API Key")) {
       return res.status(500).json({ code: "# Erro: Chave inválida ou expirada." });
     }
-    return res.status(500).json({ code: `# Erro: ${error.message}` });
+    
+    if (error.message.includes("429")) {
+      return res.status(500).json({ code: "# Erro: Muitas requisições. Tente em alguns segundos." });
+    }
+
+    return res.status(500).json({ 
+      code: `# Erro: ${error.message || "Falha na IA."}` 
+    });
   }
 }
