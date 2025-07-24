@@ -116,7 +116,7 @@ kodefy.space/
 ├── index.html          # Interface principal
 ├── script.js           # Lógica do editor + IA
 ├── style.css           # Estilos modernos
-├── pages/api/ai.js     # Endpoint da IA (Next.js)
+├── pages/api/ai.js     # Endpoint da IA (Serverless)
 ├── package.json        # Dependências
 └── .env.example        # Configuração da API
 ```
@@ -128,7 +128,7 @@ kodefy.space/
 - **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
 - **Editor:** Monaco Editor (VS Code)
 - **IA:** Google Gemini 1.5 Flash
-- **Backend:** Next.js (para API)
+- **Backend:** Serverless Functions (Vercel)
 - **Deploy:** Vercel ready
 
 ---
